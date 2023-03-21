@@ -1,22 +1,44 @@
 import { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import CarouselPage from "./CarouselReact";
 
+const name = {
+  title: "al!son park"
+};
+const App = () =>  {
+  return (
+    <div>
+    <h1> {name.title}</h1>
+  <CarouselPage>
+  </CarouselPage>
+  </div>
+  )
+}
+
+
+/*
+<CarouselPage>
+</CarouselPage>
+*/
+
+/*
 const App = () => {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
       <header className="App-header">
+        <img id="AboutMe" src="./public/cd.png"></img>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
+        <p>Hello!</p>
         <p>
           <button onClick={() => setCount(count => count + 1)}>
             count is: {count}
           </button>
         </p>
         <p>
-          Edit <code>App.jsx</code> and save to test hot module replacement (HMR).
+          
         </p>
         <p>
           <a
@@ -41,5 +63,5 @@ const App = () => {
     </div>
   );
 };
-
+*/
 export default App;

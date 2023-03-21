@@ -40,3 +40,12 @@
 button {
   font-size: calc(10px + 2vmin);
 }
+
+h1 {
+  padding-left: 20px;
+  font-family:'Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif';
+}
+
+#AboutMe{
+  padding-left: 50px;
+}
