@@ -1,16 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './CarouselStyling.css';
+import Modal from './Modal/Modal';
 const CarouselPage = () => {
     const onClick=()=>{
         console.log('Button');
     }
+    const [show, setShow] = useState(false);
     return ( 
+     <div>
+           
+         <Modal onClose={()=>setShow(false)} show={show}/>
+    
         <div id="Cards"> 
+          
         <Carousel id="Carousel" useKeyboardArrows>
-         <div onClick={onClick} className='button'  role='button' tabindex='0'>
-            <img src="./public/a_icon.svg" />
+         <div onClick={()=> setShow(true)} className='button'  role='button' tabindex='0'>
+            
+            <img src="./public/a_icon.svg" />
             <p className="legend">About Me</p>
         </div>
 
@@ -24,6 +32,7 @@ const CarouselPage = () => {
         </div>
         </Carousel>
         </div>
+    </div>
   );
 };
 

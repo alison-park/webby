@@ -2,6 +2,7 @@ import { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import CarouselPage from "./CarouselReact";
+import Modal from './Modal/Modal';
 
 const name = {
   title: "al!son park"
@@ -12,6 +13,7 @@ const App = () =>  {
     <h1> {name.title}</h1>
   <CarouselPage>
   </CarouselPage>
+ 
   </div>
   )
 }
