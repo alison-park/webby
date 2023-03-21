@@ -13,8 +13,15 @@ const Modal = props => {
                 </div>
            
             <div className="modal-body">
-                I'm Aly, a computer scientist at Northwestern University.
-            </div>
+                <center>
+               
+               
+               <img src='../public/me.jpg' width='100px'  height='140px' ></img>
+               <p></p>
+               I'm Aly, a computer scientist at Northwestern University.
+               
+                </center> 
+               </div>
             <div className="modal-footer">
                 <button onClick={props.onClose} className="button">❌</button>
             </div>

@@ -16,17 +16,17 @@ const CarouselPage = () => {
         <div id="Cards"> 
           
         <Carousel id="Carousel" useKeyboardArrows>
-         <div onClick={()=> setShow(true)} className='button'  role='button' tabindex='0'>
+         <div onClick={()=> setShow(true)} className='button'  role='button' >
             
             <img src="./public/a_icon.svg" />
             <p className="legend">About Me</p>
         </div>
 
-         <div onClick={onClick} className='button'  role='button' tabindex='1'>
+         <div onClick={onClick} className='button'  role='button' >
             <img src="./public/work.svg" />
             <p className="legend">Things I've Done</p>
         </div>
-        <div onClick={onClick} className='button'  role='button' tabindex='2'>
+        <div onClick={onClick} className='button'  role='button' >
             <img src="./public/emailz.svg" />
             <p className="legend">Contact Me</p>
         </div>
