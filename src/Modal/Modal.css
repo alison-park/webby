@@ -28,3 +28,9 @@
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
 }
+
+.button{
+    padding: 0;
+border: none;
+background: none;
+}
