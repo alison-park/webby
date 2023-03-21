@@ -25,3 +25,7 @@ h1 {
   font-family:'Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif';
 }
 
+.header{
+  padding-left: 20px;
+  padding-top: 20px;
+}

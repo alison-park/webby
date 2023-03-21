@@ -1,27 +1,36 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import CarouselPage from "./CarouselReact";
 import Modal from './Modal/Modal';
+import BasicExample from './DropDown';
+
 
 const name = {
   title: "al!son park"
 };
+
 const App = () =>  {
+  
+
   return (
-    <div>
-    <h1> {name.title}</h1>
-  <CarouselPage>
-  </CarouselPage>
- 
-  </div>
+   <div >
+      <div>
+        <div className='header'>
+        <BasicExample/>
+        </div>
+       
+        <CarouselPage>
+        </CarouselPage>
+      </div>
+    </div>
+    
   )
 }
 
 
 /*
-<CarouselPage>
-</CarouselPage>
+<h1> {name.title}</h1>
 */
 
 /*
