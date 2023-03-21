@@ -14,6 +14,7 @@
 .modal-content{
     width:500px;
     background-color: #fff;
+    border:rgb(53, 52, 52) 6px solid;
     
 }
 .modal-header, .modal-footer{
@@ -34,4 +35,8 @@
     padding: 0;
     border: none;
     background: none;
+}
+
+h4{
+    font-size: 30px;
 }
