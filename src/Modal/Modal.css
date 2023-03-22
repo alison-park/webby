@@ -44,3 +44,18 @@ h4{
 .resumeLink:hover{
     background-color: rgb(212, 232, 249);
 }
+
+.emailButton{
+    font-size: medium;
+    padding: 0;
+    border: none;
+    background: none;
+    color: blue;
+    text-decoration: underline;
+
+}
+
+.emailButton:hover{
+    background-color: rgb(212, 232, 249);
+
+}

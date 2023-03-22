@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './CarouselStyling.css';
+import ContactModal from './Modal/ContactModal';
 import Modal from './Modal/Modal';
 import ProjectsModal from './Modal/ProjectsModal';
 
@@ -11,11 +12,13 @@ const CarouselPage = () => {
     }
     const [show, setShow] = useState(false);
     const [showProject, setShowProject] = useState(false);
+    const [showContact, setShowContact] = useState(false);
     return ( 
      <div>
            
          <Modal onClose={()=>setShow(false)} show={show}/>
          <ProjectsModal onClose={()=>setShowProject(false)} showProject={showProject}/>
+         <ContactModal onClose={()=>setShowContact(false)} showContact={showContact}/>
     
         <div id="Cards"> 
           
@@ -30,7 +33,7 @@ const CarouselPage = () => {
             <img src="./public/work.svg" />
             <p className="legend">Things I've Done</p>
         </div>
-        <div onClick={onClick} className='button'  role='button' >
+        <div onClick={()=>setShowContact(true)} className='button'  role='button' >
             <img src="./public/emailz.svg" />
             <p className="legend">Contact Me</p>
         </div>
