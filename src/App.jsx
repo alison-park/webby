@@ -5,6 +5,7 @@ import CarouselPage from "./CarouselReact";
 import Modal from './Modal/Modal';
 import BasicExample from './DropDown';
 import { Header } from './components/header';
+import {AnimationChain} from './components/movingtext';
 
 
 const name = {
@@ -16,12 +17,9 @@ const App = () =>  {
 
   return (
    <div >
-      <div>
-        <div className='header'>
-       
-        <Header />
-        </div>
-       
+      <div className='header'>
+        
+        <AnimationChain/>
         <CarouselPage>
         </CarouselPage>
       </div>
@@ -30,10 +28,15 @@ const App = () =>  {
   )
 }
 
-
+/*
+no animation header
+<div className='header'>     
+  <Header />
+</div>
+ */
 /*
 <h1> {name.title}</h1>
- <BasicExample/>
+ <BasicExample/> //BUTTON dropdown menu!
 */
 
 /*
