@@ -3,15 +3,19 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './CarouselStyling.css';
 import Modal from './Modal/Modal';
+import ProjectsModal from './Modal/ProjectsModal';
+
 const CarouselPage = () => {
     const onClick=()=>{
         console.log('Button');
     }
     const [show, setShow] = useState(false);
+    const [showProject, setShowProject] = useState(false);
     return ( 
      <div>
            
          <Modal onClose={()=>setShow(false)} show={show}/>
+         <ProjectsModal onClose={()=>setShowProject(false)} showProject={showProject}/>
     
         <div id="Cards"> 
           
@@ -22,7 +26,7 @@ const CarouselPage = () => {
             <p className="legend">About Me</p>
         </div>
 
-         <div onClick={onClick} className='button'  role='button' >
+         <div onClick={()=>setShowProject(true)} className='button'  role='button' >
             <img src="./public/work.svg" />
             <p className="legend">Things I've Done</p>
         </div>
@@ -37,6 +41,8 @@ const CarouselPage = () => {
 };
 
 export default CarouselPage;
+
+
 /*
 const Button =()=>{
 const onClick=()=>{

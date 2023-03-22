@@ -26,7 +26,7 @@ export function Header() {
               class="text-dark-grey-100" className='dropdown'
               onMouseOver={() => setMenuDropDownOpen(true)} //use mouseover event to show dropdown
             >
-              al!son park
+              alison park
             </button>
 
             {isMenuDropDownOpen && <Menu />} 
