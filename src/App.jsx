@@ -4,6 +4,7 @@ import './App.css';
 import CarouselPage from "./CarouselReact";
 import Modal from './Modal/Modal';
 import BasicExample from './DropDown';
+import { Header } from './components/header';
 
 
 const name = {
@@ -17,7 +18,8 @@ const App = () =>  {
    <div >
       <div>
         <div className='header'>
-        <BasicExample/>
+       
+        <Header />
         </div>
        
         <CarouselPage>
@@ -31,6 +33,7 @@ const App = () =>  {
 
 /*
 <h1> {name.title}</h1>
+ <BasicExample/>
 */
 
 /*
