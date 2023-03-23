@@ -16,7 +16,7 @@ const Modal = props => {
                 <center>
                
                
-               <img src='../public/me.jpg' width='100px'  height='140px' ></img>
+               <img src='../public/me1.JPG' width='100px'  height='140px' ></img>
                <p></p>
                I'm Aly, a computer scientist at Northwestern University.
                

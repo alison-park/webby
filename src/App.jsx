@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import CarouselPage from "./CarouselReact";
 import Modal from './Modal/Modal';
@@ -18,8 +17,7 @@ const App = () =>  {
   return (
    <div >
       <div className='header'>
-        
-        <AnimationChain/>
+        <Header/>
         <CarouselPage>
         </CarouselPage>
       </div>
@@ -28,6 +26,9 @@ const App = () =>  {
   )
 }
 
+/*
+        <AnimationChain/>
+ */
 /*
 no animation header
 <div className='header'>     

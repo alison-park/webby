@@ -1,4 +1,4 @@
-import React, {Linking} from 'react'
+import React from 'react'
 import './Modal.css'
 
 function addSpace(str) {

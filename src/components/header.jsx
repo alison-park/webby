@@ -1,7 +1,6 @@
 import { useState, useRef } from "react";
 import { useOnHoverOutside } from "./../hooks/useOnHoverOutside";
 import Menu from "./menu";
-import MenuStyles from './MenuStyles.css'
 
 export function Header() {
   const dropdownRef = useRef(null); // Create a reference for dropdown container
