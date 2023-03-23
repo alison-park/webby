@@ -25,7 +25,7 @@ const ProjectsModal = props => {
                      resume</a>
                <p></p>
                 <a href='/api/v1/print/example.pdf' target='_blank' rel='noopener noreferrer'>
-                    <img src='../public/resume.png' width='100px'  height='100px' ></img>    
+                    <img src='resume.png' width='100px'  height='100px' ></img>    
                </a>
                 </center> 
                </div>

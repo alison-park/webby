@@ -28,6 +28,8 @@ const App = () =>  {
 
 /*
         <AnimationChain/>
+         <CarouselPage>
+        </CarouselPage>
  */
 /*
 no animation header
